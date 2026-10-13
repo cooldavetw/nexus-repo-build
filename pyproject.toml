@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexus-bundle"
+version = "0.1.0"
+description = "Build portable offline Nexus and Python wheel bundles"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+nexus-bundle = "nexus_bundle.cli:main"
+
+[tool.setuptools.package-data]
+nexus_bundle = ["templates/*"]
+
+[tool.setuptools.packages.find]
+include = ["nexus_bundle*"]

@@ -1,0 +1,2 @@
+# Copy to requirements.txt and edit the exact pins.
+requests==2.32.5
